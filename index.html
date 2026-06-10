@@ -6,7 +6,7 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <header class="lg:w-full">
+    <header class="lg:w-full relative z-0">
 
         <!-- Parent header for top and middle part for desktop -->
         <div class="hidden lg:block lg:w-full">
@@ -93,7 +93,7 @@
                 </div>
         </div>
         <!-- Lower Header shared by both devices -->
-        <div class="h-[500px] md:h-[668px] md:h-[624px]  lg:w-full lg:min-h-[600px] lg:h-96 bg-[url('./assets/lower_header_img.jpeg')] bg-cover bg-center lg:flex lg:items-center ">
+        <div class="h-[500px] md:h-[668px] md:h-[624px]  lg:w-full lg:min-h-[600px] lg:h-96 bg-[url('./assets/lower_header_img.jpeg')] opacity-90 bg-cover bg-center lg:flex lg:items-center ">
             <div class="pt-10 w-5/6 flex flex-col justify-center gap-y-4 mx-auto md:w-5/6 md:mx-auto md:flex md:flex-col md:justify-between md:gap-y-4 lg:w-5/6 lg:mx-auto lg:flex  lg:flex-col lg:gap-y-6 lg:py-10 ">
                 <div class=" ">
                     <h2 class="text-2xl font-bold text-white md:font-bold md:text-4xl md:leading-tight">Find Your Perfect <br class="hidden lg:hidden md:block" >
@@ -119,9 +119,186 @@
 
             </div>
         </div>
-
     </header>
-    <main></main>
+    <!-- container -->
+    <div class="lg:w-full absolute -bottom-60 z-10">
+        <div class="lg:w-[90%] lg:mx-auto h-[150px] lg:mx-auto rounded-md lg:pt-2  bg-[linear-gradient(90deg,#a8bcff_0%,#d8e1ff_45%,#c9d6ff_75%,#eef3ff_100%)] ">
+            <div class="lg:w-[95%] lg:m-3 mx-auto">
+                <!-- top part -->
+                <div class="w-full ">
+                    <div class="lg:w-[50%] lg:flex lg:justify-start border-b-1 border-[#333] class="text-sm text-[#333]"">
+                        <button class="bg-[#3c67ff] lg:w-[33%] lg:py-3 lg:px-4 rounded-t-lg font-medium text-md text-white">University Programs</button>
+                        <button class="bg-white lg:w-[34%] lg:py-3  lg:px-4 rounded-t-lg font-medium  text-md text-[#5a5a5a]">Language Schools</button>
+                        <button class="bg-white lg:w-[33%] lg:py-3 lg:px-4 rounded-t-lg font-medium text-md text-[#5a5a5a]">Summer Schools</button>
+                    </div>
+                </div> 
+                <!-- lower part -->
+                <div class="lg:w-[100%] rounded-md lg:flex lg:justify-between lg:items-center bg-white">
+                    <div class="lg:w-[24%] lg:pl-2 py-2">
+                        <h4 class="text-sm text-[#333]">Location</h4>
+                        <div class="lg:flex lg:justify-between lg:pr-4">
+                            <h3 class="text-[#858585]">Select Location</h3>
+                            <img class="w-4" src="./assets/down-arrow.svg" alt="down-arrow">
+                        </div>
+                    </div>
+                    <div>|</div>
+                    <div class="w-[24%] lg:pl-2 py-2">
+                        <h4 class="text-sm text-[#333]">Institution</h4>
+                        <div class="lg:flex lg:justify-between lg:pr-4">
+                            <h3 class="text-[#858585]">Select Institution</h3>
+                            <img class="w-4" src="./assets/down-arrow.svg" alt="down-arrow">
+                        </div>
+                    </div>
+                    <div>|</div>
+                    <div class="w-[24%] lg:pl-2 py-2">
+                        <h4>Discpline</h4>
+                        <div class="lg:flex lg:justify-between lg:pr-4 ">
+                            <h3 class="text-[#858585]">Select Discpline</h3>
+                            <img class="w-4" src="./assets/down-arrow.svg" alt="down-arrow">
+                        </div>
+                    </div>
+                    <div>|</div>
+                    <div class="w-[24%] lg:pl-2 py-2">
+                        <h4 class="text-sm text-[#333]">Program Level</h4>
+                        <div class="lg:flex lg:justify-between lg:pr-4 ">
+                            <h3 class="text-[#858585]">Select Program Level</h3>
+                            <img class="w-4" src="./assets/down-arrow.svg" alt="down-arrow">
+                        </div>
+                    </div>
+                    
+                    <div class="w-[8%]  lg:py-2 lg:flex lg:justify-center lg:items-center ">
+                        <button class=" bg-[#3c67ff] lg:p-3 rounded-lg">
+                            <img class="w-5" src="./assets/search.svg" alt="search-button">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <main class="z-0 mt-40 relative">
+
+    <!-- First part of the main -->
+    <div class="w-full h-[500px] mb-40">
+        <div class="w-5/6 h-full lg:mx-auto lg:gap-y-6 lg:flex lg:flex-col">
+            <!-- Why choose Uni4Edu section -->
+            <div class="h-1/3 flex flex-col lg:gap-y-4">
+                <!-- Why choose Uni4Edu -->
+                <h3 class="text-4xl font-semibold">Why Choose Uni4Edu?</h3>
+                <p>
+                    Uni4Edu brings together thousands of schools and programs on a single platform,
+                    making it easy for students to apply quickly and access free
+                    <br>
+                    counseling, visa support, and exclusive scholarship opportunities.
+                </p>
+            </div>
+
+            <!-- 3 Containers Part -->
+            <div class="lg:h-2/3 lg:w-full lg:flex lg:justify-between lg:gap-x-6">
+                <!-- 1 container -->
+                <div class="lg:w-1/3 border-2 py-4 lg:px-4 lg:flex lg:flex-col lg:gap-y-2 rounded-md shadow-xl hover:shadow-2xl border-[#8b8b8b]">
+                    <!-- Text Section and logo -->
+                    <div class="lg:flex lg:items-center lg:gap-x-4  lg:h-2/5">
+                        <img class="w-16" src="./assets/1st.png" alt="house-img">
+                        <h2 class="font-semibold text-2xl">
+                            Wide Selection of <br>Schools
+                        </h2>
+                    </div>
+                    <!-- Lower Paragraph -->
+                    <div class="h-3/5  lg:flex items-center ">
+                        <h4>
+                            Explore thousands of universities, <br>
+                            colleges, and language schools <br>
+                            worldwide, and find the one that
+                            perfectly matches your goals and
+                            dreams
+                        </h4>
+                    </div>
+                </div>
+                <!-- 2 container -->
+                <div class="lg:w-1/3 border-2 py-4 lg:px-4 lg:flex lg:flex-col lg:gap-y-2 rounded-md shadow-xl hover:shadow-2xl border-[#8b8b8b]">
+                    <!-- Text Section and logo -->
+                    <div class="lg:flex lg:items-center lg:gap-x-4 lg:h-2/5">
+                        <img class="w-16" src="./assets/2nd.png" alt="person-helping">
+                        <h2 class="font-semibold text-2xl">
+                            Personalized<br>Guidance
+                        </h2>
+                    </div>
+                    <!-- Lower Paragraph -->
+                    <div class="h-3/5 lg:flex items-center">
+                        <h4>
+                            We help you find the right university <br>
+                            and program based on your goals, <br>
+                            budget, and interests with one on one <br>
+                            expert guidance every step of the way.
+                        </h4>
+                    </div>
+                </div>
+                <!-- 3 container -->
+                <div class="lg:w-1/3 py-4 lg:px-4 lg:flex lg:flex-col lg:gap-y-2 rounded-md shadow-xl border-[#8b8b8b] border-2">
+                    <!-- Text Section and logo -->
+                    <div class="lg:flex lg:items-center lg:gap-x-4 lg:h-2/5">
+                        <img class="w-16" src="./assets/3rd.png" alt="notebook-img">
+                        <h2 class="font-semibold text-2xl">
+                            Verified<br>Institutions
+                        </h2>
+                    </div>
+                    <!-- Lower Paragraph -->
+                    <div class="h-3/5 lg:flex items-center">
+                        <h4>
+                            Study with confidence every university
+                            <br>and school we work with is verified
+                            <br>and accredited to guarantee a trusted
+                            <br>and secure academic experience
+                            abroad.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Part of the main -->
+    <div class="absolute left-1/2 -translate-x-1/2 translate-y-0 bottom-20 z-20 w-full">
+        <!-- To adjust the width -->
+        <div class="w-5/6 h-[160px] bg-white rounded-lg shadow-lg border border-[#e5e5e5] lg:mx-auto lg:flex lg:items-center">
+            <!-- First container -->
+            <div class="w-1/3 lg:flex lg:gap-y-2 lg:justify-center lg:items-center lg:flex-col h-full">
+                <h2 class="text-5xl font-bold text-[#3f4e59]">50.000 +</h2>
+                <h4 class="text-lg text-[#797878] font-medium mt-2">
+                    Courses and Programs
+                </h4>
+            </div>
+            <div class="h-20 w-px bg-[#d9d9d9]"></div>
+            <!-- Second Container -->
+            <div class="w-1/3 lg:flex lg:gap-y-2 lg:flex-col lg:justify-center lg:items-center h-full">
+                <h2 class="text-5xl font-bold text-[#3f4e59]">150 +</h2>
+                <h4 class="text-lg text-[#797878] font-medium mt-2">
+                    Study Destinations
+                </h4>
+            </div>
+            <div class="h-20 w-px bg-[#d9d9d9]"></div>
+            <!-- Third Container -->
+            <div class="w-1/3 lg:flex lg:gap-y-2 lg:flex-col lg:justify-center lg:items-center h-full">
+                <h2 class="text-5xl font-bold text-[#3f4e59]">%98</h2>
+                <h4 class="text-lg text-[#797878] font-medium mt-2">
+                    Success Rate
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- Third Part of the main -->
+    <div class="bg-[#f6f6f6] pt-32 mt-4 z-0">
+        <div class="w-5/6 mx-auto">
+            <h2 class="text-4xl font-semibold">
+                Find the Best Fit for Your Goals
+            </h2>
+        </div>
+
+        <div></div>
+    </div>
+
+    </main>
     <footer></footer>
 </body>
 </html>
